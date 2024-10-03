@@ -1,1 +1,105 @@
+/* Basic body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; 
+    color: #333; 
+}
 
+/* Align logo and title in the header */
+.logo-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 150px; 
+    height: auto;
+    margin-right: 25px; 
+    border: none;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2em;
+    color: white;
+}
+
+/* Header styling */
+header {
+    background-color: #444;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    color: #bbb; 
+}
+
+/* Main content styling */
+main {
+    padding: 20px;
+}
+
+h2, h3 {
+    font-size: 1.5em;
+    color: #444; 
+}
+
+figure {
+    text-align: center;
+    margin: 20px 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc; 
+}
+
+figcaption {
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #666; 
+}
+
+/* Car gallery grid */
+.car-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Blockquote styling */
+blockquote {
+    font-style: italic;
+    margin: 20px 0;
+    padding-left: 10px;
+    border-left: 3px solid #888; 
+}
+
+/* Footer styling */
+footer {
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    color: #ddd;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
