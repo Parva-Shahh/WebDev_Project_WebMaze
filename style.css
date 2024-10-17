@@ -1,59 +1,67 @@
 /* Basic body styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; 
+    font-style: normal;
     margin: 0;
     padding: 0;
     background-color: #ffffff; 
-    color: #ffffff; 
+    color: #000000; 
 }
 
-/* Align logo and title in the header */
+
 .logo-title {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
 }
 
 .logo {
-    width: 150px; 
+    width: 150px;  
     height: auto;
-    margin-right: 25px; 
+    margin-right: 25px;
     border: none;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.2em;
+    font-size: 3em; 
     color: rgb(255, 255, 255);
-    text-align: center;
 }
+
+.navigation {
+    margin-top: 20px; 
+    font-size: 1.5em; 
+}
+
 
 /* Header styling */
 header {
     background-color: #000000;
     color: white;
-    padding: 25px;
+    padding-top: 25px;
     text-align: center;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 50px;
 }
 
 nav a:hover {
-    color: #bbb; 
+    color: #bbb;
 }
 
-/* Main content styling */
+
 main {
     padding: 20px;
 }
 
 h2, h3 {
     font-size: 1.1em;
-    color: #ffffff;
+    color: #000000; 
     text-align: justify;
 }
 
@@ -65,14 +73,14 @@ figure {
 img {
     max-width: 100%;
     height: auto;
-    border: 1px solid #ccc; 
+    border: 1px solid #ccc;
     align-content: center;
 }
 
 figcaption {
     margin-top: 5px;
     font-size: 0.9em;
-    color: #666; 
+    color: #666;
 }
 
 /* Car gallery grid */
@@ -88,7 +96,7 @@ blockquote {
     font-style: italic;
     margin: 20px 0;
     padding-left: 10px;
-    border-left: 3px solid #888; 
+    border-left: 3px solid #888;
 }
 
 /* Footer styling */
@@ -102,6 +110,11 @@ footer {
 footer a {
     color: #ddd;
 }
+
+footer a:hover {
+    text-decoration: underline;
+}
+ 
 
 footer a:hover {
     text-decoration: underline;
