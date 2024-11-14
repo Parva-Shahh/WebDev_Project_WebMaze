@@ -1,0 +1,165 @@
+/* Basic body styling */
+body {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; 
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; 
+    color: #000000; 
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.logo {
+    width: 150px;  
+    height: auto;
+    margin-right: 25px;
+    border: none;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em; 
+    color: rgb(255, 255, 255);
+}
+
+.navigation {
+    margin-top: 20px; 
+    font-size: 1.5em; 
+}
+
+
+/* Header styling */
+header {
+    background-color: #000000;
+    color: white;
+    padding-top: 25px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 50px;
+}
+
+nav a:hover {
+    color: #bbb;
+}
+
+
+main {
+    padding: 20px;
+}
+
+h2, h3 {
+    font-size: 1.1em;
+    color: #000000; 
+    text-align: justify;
+}
+
+figure {
+    text-align: center;
+    margin: 20px 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    align-content: center;
+}
+
+figcaption {
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Car gallery grid */
+.car-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Blockquote styling */
+blockquote {
+    font-style: italic;
+    margin: 20px 0;
+    padding-left: 10px;
+    border-left: 3px solid #888;
+}
+
+/* Form styling */
+form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto; 
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+
+.form-section {
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;  
+    padding: 0;
+}
+
+section h1 {
+    text-align: center;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: "Oswald", sans-serif;
+}
+
+form input[type="submit"] {
+    background-color: #000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 10px 30px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #444;
+}
+
+/* Footer styling */
+footer {
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    color: #ddd;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+ 
