@@ -147,6 +147,47 @@ form input[type="submit"]:hover {
     background-color: #444;
 }
 
+label::after {
+    content: " *";
+    color: red;
+}
+
+input[type="checkbox"] + label::after,
+input[type="radio"] + label::after {
+    content: none;
+}
+
+input, textarea, select {
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.form-row {
+    display: flex;
+    align-items: center; 
+    gap: 15px; 
+    margin-bottom: 15px; 
+}
+
+input[type="radio"]{
+    margin: 0; 
+    width: 20px; 
+    height: 20px;
+}
+
+input[type="checkbox"]{
+    margin: 0; 
+    width: 20px; 
+    height: 20px;
+}
+
+label {
+    margin: 0;
+    font-size: 16px; 
+    line-height: 1.2; 
+}
+
+
 /* Footer styling */
 footer {
     background-color: #444;
@@ -197,3 +238,90 @@ footer a:hover {
 .dropdown:hover .dropdown-content {display: block;}
   
 .dropdown:hover .dropbtn {background-color: gray; color: white;}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+    background: linear-gradient(135deg, #f2f2f2, #e6e6e6);
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 12px 15px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="tel"]:focus,
+form textarea:focus {
+    border-color: #000;
+    background: white;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+form textarea {
+    resize: none;
+    min-height: 100px;
+    padding: 15px;
+}
+
+.dropbtn {
+    background: linear-gradient(135deg, #333, #111);
+    color: #fff;
+    border: 2px solid #444;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.dropbtn:hover {
+    background: linear-gradient(135deg, #555, #222);
+}
+
+.dropdown-content {
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+.dropdown-content a {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: #f9f9f9;
+    transition: background 1s ease;
+}
+
+.dropdown-content a:hover {
+    background: #eee;
+}
+
+form input[type="submit"] {
+    background: linear-gradient(135deg, #000, #444);
+    border: 2px solid #333;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+form input[type="submit"]:hover {
+    background: linear-gradient(135deg, #222, #555);
+    transform: scale(1.05);
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+form input,
+form textarea {
+    box-sizing: border-box;
+}
