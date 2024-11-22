@@ -17,44 +17,45 @@
 
     <header>
         <div class="logo-title">
-            <img src="../media/logo.jpg" alt="O'Reilly Wheels Logo" class="logo">
+            <img src="../Images/logo.jpg" alt="O'Reilly Wheels Logo" class="logo">
             <h1>O'Reilly Wheels</h1>
         </div>
         <nav class="navigation">
             <a href="../index.html"><i class="fas fa-home"></i> Home</a>
-            <a href="../pages/about.html"><i class="fas fa-user"></i> About</a>
-            <a href="../pages/contact.html"><i class="fas fa-envelope"></i> Contact</a>
-            <a href="../pages/reservation.html"><i class="fas fa-envelope"></i> Reservation</a>
-        </nav>        
+            <a href="about.html"><i class="fas fa-user"></i> About</a>
+            <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+            <a href="reservation.html"><i class="fas fa-calendar-alt"></i> Reservation</a>
+        </nav>      
     </header>
 
+    
     <main>
         <section>
             <h1>Reservations - Book Now!</h1>
             <figure>
-                    <img src="https://images.unsplash.com/photo-1685240495178-98cb8bb4762f?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Contact Us" width="1200" height="400">
-                    <figcaption>We are global, we are multifaceted, we are O'Reilly Wheels. Photo by <a href="https://unsplash.com/@shotbynate">Nate Dieckhaus</a> on <a href="https://unsplash.com/photos/a-red-sports-car-driving-down-a-wet-road-Stc3bP5v_Us">Unsplash</a></figcaption>
+                <img src="https://images.unsplash.com/photo-1685240495178-98cb8bb4762f?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Contact Us" width="1200" height="400">
+                <figcaption>We are global, we are multifaceted, we are O'Reilly Wheels. Photo by <a href="https://unsplash.com/@shotbynate">Nate Dieckhaus</a> on <a href="https://unsplash.com/photos/a-red-sports-car-driving-down-a-wet-road-Stc3bP5v_Us">Unsplash</a></figcaption>
             </figure>
         </section>
 
         <section class="form-section">
             <form>
-                <div style="margin: 20px 0;">
-                    <label for="fname">Your Name and Surname * :</label><br>
-                    <input type="text" id="fname" name="fname" placeholder="John Doe" required><br>
-                </div>
-                
-                <div style="margin: 20px 0;">
-                    <label for="email">Your E-mail * :</label><br>
-                    <input type="email" id="email" name="email" placeholder="example@email.com" required><br>
+                <div>
+                    <label for="fname">Your Name and Surname:</label>
+                    <input type="text" id="fname" name="fname" placeholder="John Doe" required>
                 </div>
 
-                <div style="margin: 20px 0;">
-                    <label for="phone">Your Phone Number * :</label><br>
-                    <input type="tel" id="phone" name="phone" placeholder="+1234567890" required><br>
+                <div>
+                    <label for="email">Your E-mail:</label><br>
+                    <input type="email" id="email" name="email" placeholder="example@email.com" required>
                 </div>
 
-                <div style="margin: 20px 0;" class="dropdown">
+                <div>
+                    <label for="phone">Your Phone Number:</label><br>
+                    <input type="tel" id="phone" name="phone" placeholder="+1234567890" required>
+                </div>
+
+                <div class="dropdown">
                     <label for="car">CAR SELECTION SECTION:</label><br>
                     <button class="dropbtn">Please select the car you would like to reserve:</button>
                     <div class="dropdown-content">
@@ -69,39 +70,53 @@
                     </div>
                 </div>
 
-                <div style="margin: 20px 0;">
+                <div>
                     <label for="weekdays">Please select the day and time you would like to reserve:</label>
                     <input type="datetime-local" id="weekdays" name="weekdays" required>
                 </div>
 
-                <div style="margin: 20px 0;">
+                <div>
                     <label for="time">Please select for how long you would like to rent the car:</label><br>
-    
-                    <input type="checkbox" id="time15" name="time" value="15" required>
-                    <label for="time15">15 minutes | €400 - €900</label><br>
-                    
-                    <input type="checkbox" id="time30" name="time" value="30">
-                    <label for="time30">30 minutes | €800 - €1,800</label><br>
-                    
-                    <input type="checkbox" id="time60" name="time" value="60">
-                    <label for="time60">1 hour | €2,000 - €4,500</label>
-
-                    <input type="checkbox" id="time120" name="time" value="120">
-                    <label for="time120">2 hours | €3,500 - €7,000</label>
+                    <div class="form-row">
+                        <input type="checkbox" id="time15" name="time" value="15">
+                        <label for="time15">15 minutes | €400 - €900</label>
+                    </div>
+                    <div class="form-row">
+                        <input type="checkbox" id="time30" name="time" value="30">
+                        <label for="time30">30 minutes | €800 - €1,800</label>
+                    </div>
+                    <div class="form-row">
+                        <input type="checkbox" id="time60" name="time" value="60">
+                        <label for="time60">1 hour | €2,000 - €4,500</label>
+                    </div>
+                    <div class="form-row">
+                        <input type="checkbox" id="time120" name="time" value="120">
+                        <label for="time120">2 hours | €3,500 - €7,000</label>
+                    </div>                    
                 </div>
 
                 <div>
-                    <label for="time">Please select for how long you would like to rent the car:</label><br>
-                    
-                    <label for="html">1 person</label><br>
-                    <input type="radio" id="html" name="fav_language" value="HTML">
-      
-                    <label for="html">2 people</label><br>
-                    <input type="radio" id="html" name="fav_language" value="HTML">
+                    <label for="people">How many people?</label><br>
+                    <div class="form-row">
+                        <input type="radio" id="person1" name="people" value="1" required>
+                        <label for="person1">1 person</label>
+                    </div>
+                    <div class="form-row">
+                        <input type="radio" id="person2" name="people" value="2">
+                        <label for="person2">2 people</label>
+                    </div>
+                    <div class="form-row">
+                        <input type="radio" id="person3" name="people" value="3">
+                        <label for="person3">3 people</label>
+                    </div>
+                    <div class="form-row">
+                        <input type="radio" id="person4" name="people" value="4">
+                        <label for="person4">4 people</label>
+                    </div>
                 </div>
 
-                <div style="text-align: center; margin: 30px 0;">
-                    <input type="submit" value="Submit Inquiry" style="padding: 10px 30px; font-size: 1.2em; background-color: #000; color: #fff; border: none; cursor: pointer;">
+                <div>
+                    <input type="submit" value="Submit Inquiry">
                 </div>
             </form>
         </section>
