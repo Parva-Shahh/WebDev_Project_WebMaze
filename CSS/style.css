@@ -325,6 +325,58 @@ form input,
 form textarea {
     box-sizing: border-box;
 }
+.event-announcement {
+    text-align: center;
+    padding: 30px;
+    background: #f8f9fa;
+    border-bottom: 5px solid #d32f2f;
+    margin-bottom: 20px;
+}
+
+.event-announcement h1 {
+    font-size: 2.5rem;
+    color: #b71c1c;
+}
+
+.event-announcement p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.event-announcement ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.event-announcement ul li {
+    font-size: 1.1rem;
+    color: #555;
+    margin: 10px 0;
+}
+
+.event-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.book-event-btn {
+    padding: 10px 20px;
+    background: #d32f2f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.book-event-btn:hover {
+    background: #9a0000;
+}
 .car-offers {
     text-align: center;
     padding: 30px;
