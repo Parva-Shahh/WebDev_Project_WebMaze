@@ -384,6 +384,7 @@ form textarea {
 .book-event-btn:hover {
     background: #9a0000;
 }
+/* Offers Section Styling */
 .car-offers {
     text-align: center;
     padding: 30px;
@@ -403,17 +404,16 @@ form textarea {
     margin-bottom: 30px;
 }
 
-
+/* Grid Layout for Offers */
 .offer-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr 1fr; 
-    gap: 10px;
-    height: 100vh; 
-    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Flexible grid columns */
+    gap: 20px; /* Space between offer cards */
     max-width: 1200px;
+    margin: 0 auto;
 }
 
+/* Individual Offer Card */
 .offer-card {
     background: #fff;
     border: 1px solid #ddd;
@@ -427,8 +427,8 @@ form textarea {
 
 .offer-card img {
     width: 100%;
-    height: 100%;
-    object-fit: cover; 
+    height: 200px;
+    object-fit: cover; /* Ensures consistent image aspect ratio */
 }
 
 .offer-card h2 {
@@ -456,6 +456,11 @@ form textarea {
     font-size: 1rem;
     transition: background 0.3s ease;
 }
+
+.learn-more-btn:hover {
+    background: #9a0000;
+}
+
 
 .learn-more-btn:hover {
     background: #9a0000;
