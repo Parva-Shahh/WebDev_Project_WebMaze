@@ -356,12 +356,19 @@ form textarea {
     margin: 10px 0;
 }
 
-.event-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin: 20px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.event-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    margin: 20px 0; 
+}
+
+.event-images img {
+    width: 45%; 
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    object-fit: cover;
 }
 
 .book-event-btn {
