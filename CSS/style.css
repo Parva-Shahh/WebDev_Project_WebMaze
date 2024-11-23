@@ -325,3 +325,99 @@ form input,
 form textarea {
     box-sizing: border-box;
 }
+.car-offers {
+    text-align: center;
+    padding: 30px;
+    background: #f8f9fa;
+    margin-top: 20px;
+    border-top: 5px solid #d32f2f;
+}
+
+.car-offers h1 {
+    font-size: 2.5rem;
+    color: #b71c1c;
+    margin-bottom: 10px;
+}
+
+.car-offers p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.offer-filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    background: #fff;
+    border: 2px solid #d32f2f;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #d32f2f;
+    transition: all 0.3s ease;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background: #d32f2f;
+    color: #fff;
+}
+
+.offer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.offer-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.offer-card img {
+    width: 100%;
+    height: auto;
+}
+
+.offer-card h2 {
+    font-size: 1.5rem;
+    margin: 15px;
+    color: #333;
+}
+
+.offer-card p {
+    font-size: 1rem;
+    margin: 0 15px 15px;
+    color: #666;
+}
+
+.learn-more-btn {
+    display: block;
+    margin: 0 15px 15px;
+    padding: 10px;
+    text-align: center;
+    background: #d32f2f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.learn-more-btn:hover {
+    background: #9a0000;
+}
