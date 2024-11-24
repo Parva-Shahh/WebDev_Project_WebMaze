@@ -465,4 +465,131 @@ form textarea {
 .learn-more-btn:hover {
     background: #9a0000;
 }
+/* Mobile devices (width < 600px) */
+@media only screen and (max-width: 599px) {
+    body {
+        font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    nav a {
+        margin: 0 10px;
+        font-size: 1em;
+    }
+
+    .car-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .form-section form {
+        width: 90%;
+    }
+
+    .navigation {
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #333; 
+        padding: 10px;
+    }
+
+    .navigation a {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+        color: white;
+        text-align: left;
+        border-bottom: 1px solid #444; 
+    }
+
+    .navigation a:hover {
+        background-color: #444;
+    }
+}
+
+/* Tablets (width between 600px and 1024px) */
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    nav a {
+        margin: 0 20px;
+        font-size: 1.2em;
+    }
+
+    .navigation {
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #333; 
+        padding: 10px;
+    }
+
+    .navigation a {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+        color: white;
+        text-align: left;
+        border-bottom: 1px solid #444; 
+    }
+
+    .navigation a:hover {
+        background-color: #444;
+    }
+
+    .car-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .form-section form {
+        width: 80%;
+    }
+}
+
+/* Desktop screens (width > 1024px) */
+@media only screen and (min-width: 1025px) {
+    body {
+        font-size: 16px;
+    }
+
+    header h1 {
+        font-size: 3em;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    nav a {
+        margin: 0 50px;
+        font-size: 1.5em;
+    }
+
+    .car-gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .form-section form {
+        width: 60%;
+    }
+}
+
+
 
