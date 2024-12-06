@@ -41,12 +41,17 @@
         <section class="form-section">
             <form>
                 <div style="margin: 20px 0;">
-                    <label for="fname">Your Name and Surname:</label><br>
-                    <input type="text" id="fname" name="fname" placeholder="John Doe" required><br>
+                    <label for="fname">Your Name:</label><br>
+                    <input type="text" id="fname" name="fname" placeholder="e.g. John" required><br>
+                </div>
+
+                <div style="margin: 20px 0;">
+                    <label for="fsurname">Your Surname:</label><br>
+                    <input type="text" id="fsurname" name="fsurname" placeholder="e.g. O'Reilly" required><br>
                 </div>
                 
                 <div style="margin: 20px 0;">
-                    <label for="email">Your Email:</label><br>
+                    <label for="email">Your Email Address:</label><br>
                     <input type="email" id="email" name="email" placeholder="example@email.com" required><br>
                 </div>
 
@@ -55,9 +60,19 @@
                     <input type="tel" id="phone" name="phone" placeholder="+1234567890" required><br>
                 </div>
 
+                <div class="dropdown">
+                    <label for="dropbtn">Your Reason:</label><br>
+                    <button class="dropbtn">Reason for Inquiry:</button>
+                    <div class="dropdown-content">
+                        <a href="#">GENERAL</a>
+                        <a href="#">FEEDBACK</a>
+                        <a href="#">TECHNICAL SUPPORT</a>
+                    </div>
+                </div>
+
                 <div style="margin: 20px 0;">
-                    <label for="message">Your Inquiry:</label><br>
-                    <textarea id="message" name="message" placeholder="How can we help you?" rows="5" required></textarea><br>
+                    <label for="textarea">Your Message:</label><br>
+                    <textarea id="textarea" name="textarea" placeholder="How can we help you?" rows="5" required></textarea><br>
                 </div>
 
                 <div style="text-align: center; margin: 30px 0;">
