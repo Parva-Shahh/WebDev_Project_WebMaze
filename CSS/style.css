@@ -203,7 +203,79 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
- 
+/* Dropdown button styling */
+.dropbtn {
+    background: linear-gradient(135deg, #000, #333);
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+.dropbtn:hover {
+    background: linear-gradient(135deg, #333, #555);
+    transform: scale(1.03);
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border: 1px solid #ddd;
+}
+
+.dropdown-content button {
+    padding: 12px 20px;
+    text-align: left;
+    background-color: #f9f9f9;
+    border: none;
+    width: 100%;
+    font-size: 1rem;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-content button:hover {
+    background-color: #eee;
+    color: #000;
+}
+
+/* Show dropdown content on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Selected car display */
+#selectedCar {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #444;
+    font-weight: bold;
+}
+
 .dropbtn {
     background-color: black;
     color: white;
