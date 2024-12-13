@@ -305,6 +305,34 @@ footer a:hover {
 .dropdown:hover .dropdown-content {display: block;}
   
 .dropdown:hover .dropbtn {background-color: gray; color: white;}
+select {
+    background: linear-gradient(135deg, #333, #111);
+    color: #fff;
+    border: 2px solid #444;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+    width: 100%;
+    appearance: none; /* Вимикає стандартний стиль браузера */
+    cursor: pointer;
+}
+
+select:hover {
+    background: linear-gradient(135deg, #555, #222);
+}
+
+select:focus {
+    outline: none;
+    border-color: #777;
+}
+
+select option {
+    background: #fff;
+    color: #000;
+    font-size: 1rem;
+    padding: 10px;
+}
 
 form input[type="text"],
 form input[type="email"],
