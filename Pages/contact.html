@@ -61,14 +61,14 @@
                     <input type="tel" id="phone" name="phone" placeholder="+1234567890" required><br>
                 </div>
 
-                <div class="dropdown">
-                    <label for="dropbtn">Your Reason:</label><br>
-                    <button class="dropbtn">Reason for Inquiry:</button>
-                    <div class="dropdown-content">
-                        <a href="#">GENERAL</a>
-                        <a href="#">FEEDBACK</a>
-                        <a href="#">TECHNICAL SUPPORT</a>
-                    </div>
+                <div style="margin: 20px 0;">
+                    <label for="reason">Your Reason:</label><br>
+                    <select id="reason" name="reason" required>
+                        <option value="" disabled selected>Select a reason</option>
+                        <option value="general">General</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="technical">Technical Support</option>
+                    </select><br>
                 </div>
 
                 <div style="margin: 20px 0;">
