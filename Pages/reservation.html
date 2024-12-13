@@ -60,16 +60,24 @@
                 <div class="dropdown">
                     <label for="car">CAR SELECTION SECTION:</label><br>
                     <button class="dropbtn">Please select the car you would like to reserve:</button>
-                    <div class="dropdown-content">
-                        <a href="#">Lamborghini Aventador S Roadster</a>
-                        <a href="#">Lamborghini Aventador SVJ</a>
-                        <a href="#">Lamborghini Gallardo</a>
-                        <a href="#">Mercedes-Benz Coupe</a>
-                        <a href="#">Maserati</a>
-                        <a href="#">Mercedes-Benz 240D (W115)</a>
-                        <a href="#">Bugatti Chiron</a>
-                        <a href="#">McLaren 720S</a>
+                        <div class="dropdown-content">
+                            <button onclick="selectCar('Lamborghini Aventador S Roadster')">Lamborghini Aventador S Roadster</button>
+                            <button onclick="selectCar('Lamborghini Aventador SVJ')">Lamborghini Aventador SVJ</button>
+                            <button onclick="selectCar('Lamborghini Gallardo')">Lamborghini Gallardo</button>
+                            <button onclick="selectCar('Mercedes-Benz Coupe')">Mercedes-Benz Coupe</button>
+                            <button onclick="selectCar('Maserati')">Maserati</button>
+                            <button onclick="selectCar('Мercedes-Benz 240D (W115)')">Мercedes-Benz 240D (W115)</button>
+                            <button onclick="selectCar('Bugatti Chiron')">Bugatti Chiron</button>
+                            <button onclick="selectCar('McLaren 720S')">McLaren 720S</button>
+                        </div>
+                        <p id="selectedCar" style="margin-top: 10px; font-weight: bold;">No car selected</p>
                     </div>
+                    <script>
+                        function selectCar(carName) {
+                            const selectedCarElement = document.getElementById('selectedCar');
+                            selectedCarElement.textContent = 'You selected: ' + carName;
+                        }
+                    </script>
                 </div>
 
                 <div>
