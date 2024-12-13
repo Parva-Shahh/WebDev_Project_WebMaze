@@ -307,14 +307,12 @@ footer a:hover {
 .dropdown:hover .dropbtn {background-color: gray; color: white;}
 select {
     background: linear-gradient(135deg, #333, #111);
-    color: #fff;
     border: 2px solid #444;
     padding: 10px 20px;
-    font-size: 1.1rem;
     border-radius: 8px;
     transition: background 0.3s ease;
     width: 100%;
-    appearance: none; /* Вимикає стандартний стиль браузера */
+    appearance: none; 
     cursor: pointer;
 }
 
@@ -328,7 +326,6 @@ select:focus {
 }
 
 select option {
-    background: #fff;
     color: #000;
     font-size: 1rem;
     padding: 10px;
